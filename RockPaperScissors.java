@@ -39,7 +39,8 @@ public static void convertUserAnswer(char c) {
             int randomNumber = (int)Math.round(Math.random()*2);
             // Prompt the user and reading the choice is
             char userAnswer = keyboard.readChar("Insert 'R' for Rock, 'P' for Paper and 'S' for Scissors: ");
-            System.out.println(userChoice);
+            // Assigning values to the char inputs
+            convertUserAnswer(userAnswer);
             if (userChoice != null) {
                 // Printing out the choices first
                 System.out.println();
